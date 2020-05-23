@@ -1,4 +1,4 @@
-''' Time complexity is O(v+e) v=vertices e=edge  it is used in  it is use in google search and in a experiment to find how many 
+''' Time complexity is O(v+e) v=vertices e=edge  it is used in google search and in a experiment to find how many 
 move is required to solve a 3x3 rubix cube(20 move) time complexity(nxn/lg n)'''
 from collections import defaultdict
 class Graph:

@@ -1,8 +1,10 @@
-'''heap sort has nlogn bigo complexity
+'''heap sort has nlogn big oh complexity
+n is size of array
+parent is bigger than left and right child in max heap and vice versa in min heap
 left child is 2*n +1
 right is 2*n +2
 this is max heap
-to convert this to min heap just comvert < in heapify to >  
+to convert this to min heap just comvert < in heapify to >
 '''
 
 
@@ -23,7 +25,7 @@ def heap(arr,n):
 	for i in range(n,-1,-1):
 		heapify(arr,i,n)
 	for i in range(n-1,0,-1):
-		(arr[0],arr[i])=(arr[i],arr[0])#transfering highest element from root to last 
+		(arr[0],arr[i])=(arr[i],arr[0])#transfering highest element from root to last
 		heapify(arr,0,i)
 def delete(arr,a):
 	l=0;

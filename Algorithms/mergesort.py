@@ -1,4 +1,5 @@
-'''merge has complexity of (6n*log n base 2) + 6n  big Oh of nlog n it better than insertion sort for higher range'''
+'''merge has complexity of (6n*log n base 2) + 6n  big Oh of nlog n it better than insertion sort for higher range
+it sort by sorting sub parts of given array and then merge them'''
 def merge(L,R):
 	(ll,lr)=(len(L),len(R))
 	(i,j,t)=(0,0,[])
@@ -15,7 +16,7 @@ def merge(L,R):
 		elif R[j]<L[i]:
 			t.append(R[j])
 			j=j+1
-	return t 
+	return t
 def mergesort(arr,l,r):
 	if r-l<=1:
 		return arr[l:r]

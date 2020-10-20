@@ -3,6 +3,9 @@ worst case is O(n) in case of list
 
 sorting take nlog n time in worst case (balanced tree)
 
+
+
+test ---
 '''
 
 class Node:
@@ -13,7 +16,7 @@ class Node:
 def insert(root,data):
 	if(root.val==None):
 		root.val=data
-		return 
+		return
 	if(data<root.val):
 		if(root.left==None):
 			root.left=Node(data)
@@ -25,7 +28,7 @@ def insert(root,data):
 		else:
 			insert(root.right,data)
 def search(root,data):
-	
+
 	if(root.val==data):
 		return "Yes"
 	if(root.val>data):

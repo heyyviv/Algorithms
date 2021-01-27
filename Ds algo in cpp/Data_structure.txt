@@ -1,0 +1,25 @@
+Linked List
+it is data structure used to store collection of data
+successive element are pointed by pointer
+last element point to null
+can shrink or increase in size during execution
+space is wasted in storing pointer
+  advantage
+  expanded in constant time
+
+
+Array
+Arrays are defined as contiguous block of memory so any element will be near it's neighbor
+these greatly benefit modern CPU caching method.
+
+constant time is needed to access a element in Array
+To calculate address of an element in array we need base address and then add
+offset to the base address  of the array
+offset = size(data type) * index
+  disadvantage
+  Preallocates all the needed memory in up front and then waste memory for the indices which are empty
+  Fixed size
+  To insert a element in a desired position in an array we have to shift rest of the element which is
+  expensive if the desired position is in front
+Dynamin Array
+is a random access ,variable size list data structure which allow element to add or remove

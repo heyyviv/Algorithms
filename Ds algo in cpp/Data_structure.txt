@@ -23,3 +23,18 @@ offset = size(data type) * index
   expensive if the desired position is in front
 Dynamin Array
 is a random access ,variable size list data structure which allow element to add or remove
+
+Stacks
+it is a order list in which addition and deletion are done in one end of the list called top . it last in first out system (LIFO). last
+element to enter is first element to delete.
+ three ways to implement Stacks
+ 1. simple array based implementation
+ 2. dynamic array based implementation
+ 3. linked list based implementation
+
+ Queue
+ it is a order list in which addition(rear end) and deletion(front end) happen in opposite side of queue. first in first out rule is followed by queue.
+ three ways to implement Queue
+ 1. simple circular array based implementation
+ 2. dynamic circular array based implementation
+ 3. linked list based implementation

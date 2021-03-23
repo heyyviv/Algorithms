@@ -21,10 +21,10 @@ vector<pair<int,int> > v[n];
 
 int main()
 {
-	ios_base::sync_with_stdio(false); 
-    cin.tie(NULL);  
+	ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     cout.tie(NULL);
-	
+
 	for(int i=2;i<n;i++){
 		if(prime[i]!=0) continue;
 		prime[i]=i;
@@ -43,10 +43,10 @@ int main()
 			v[i].push_back(pp);
 		}
 	}
-	
+
 	for(int i=1;i<n;i++){
 		A[i]=v[i].size();}
-	
+
 	for(int i=1;i<n;i++){
 		for(int k=0;k<6;k++){
 			prefix[i][k]=prefix[i-1][k]+(A[i]==k);
@@ -59,9 +59,8 @@ int main()
 		cin>>l>>r>>k;
 		cout<<prefix[r][k]-prefix[l-1][k]<<endl;
 	}
-	
+
 
 return 0;
- 
-}
 
+}

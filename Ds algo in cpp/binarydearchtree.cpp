@@ -50,11 +50,11 @@ BST* BST:: deletetree(BST* root,int key){
 	}else if(root->data>key){
 		root->right=deletetree(root->right,key);
 	}else{
-		if(root->left==NULL){
+		if(root->left == NULL){
 			BST* temp=root->right;
 			free(root);
 			return temp;
-		}else if(root->right==NULL){
+		}else if(root->right == NULL){
 			BST *temp=root->left;
 			free(root);
 			return temp;
